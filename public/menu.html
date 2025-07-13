@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilomenu.css">
+</head>
+<body>
+           <!-- Barra de navegación -->
+ <nav class="navegacion">
+    <div class="contenedor-navegacion">
+        <a href="#" class="logo">Sabores Eternos</a>
+        
+        <!-- Nuevo: Botón del menú móvil -->
+        <div class="menu-hamburguesa" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+        </div>
+
+        <ul class="menu-navegacion">
+            <li><a href="index.html" class="enlace-navegacion">Inicio</a></li>
+            <li><a href="menu.html" class="enlace-navegacion">Menú</a></li>
+            <li><a href="quienesomos.html" class="enlace-navegacion">Quiénes Somos</a></li>
+            <li><a href="sucursal.html" class="enlace-navegacion">Sucursales</a></li>
+            <li><a href="contacto.html" class="enlace-navegacion">Contáctanos</a></li>
+        </ul>
+
+        <div class="iconos-navegacion">
+            <a href="carrito.html" class="icono-navegacion"><i class="fas fa-shopping-cart"></i></a>
+            <a href="login.html" class="icono-navegacion"><i class="fas fa-user"></i></a>
+            <a href="registro.html" class="icono-navegacion"><i class="fas fa-sign-in-alt"></i></a>
+        </div>
+    </div>
+</nav>
+
+<!--                                     Menu                   -->
+        <!-- Primero el div del fondo verde (independiente) -->
+<div class="fondo-verde"></div>
+
+<div class="menu-wrapper">
+    <div class="menu-background"></div>
+    <div class="menu-container">
+        <h1 class="menu-title">MENU</h1>
+        <div class="menu-content">
+            <h2 class="section-title">PLATOS PRINCIPALES</h2>
+            
+            <!-- Platos existentes -->
+            <div class="plato-item">
+                <div class="plato-info">
+                    <h3 class="plato-title">Flan Francesa</h3>
+                    <p class="plato-description">Una tabla de quesos variados acompañada de tomates cherry, crema con cebollín, y pan fresco.</p>
+                    <div class="plato-buttons">
+                        <button class="btn-pedido">Añadir al carrito</button>
+                   
+                    </div>
+                </div>
+                <div class="plato-imagen-container">
+                    <span class="plato-precio">20 Bs</span>
+                    <div class="plato-imagen">
+                        <img src="img/Platillo/platillo3.jpg" alt="Flan Francesa">
+                        <button class="btn-pedido">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="plato-item">
+                <div class="plato-info">
+                    <h3 class="plato-title">VACA AL VACIO</h3>
+                    <p class="plato-description">Rebanadas de carne asada en salsa acompañadas de puré de papas cremoso con especias.</p>
+                    <div class="plato-buttons">
+                        <button class="btn-pedido">Añadir al carrito</button>
+                      
+                    </div>
+                </div>
+                <div class="plato-imagen-container">
+                    <span class="plato-precio">50 Bs</span>
+                    <div class="plato-imagen">
+                        <img src="img/Platillo/platillo6.jpg" alt="Flan Francesa">
+                   
+                        <button class="btn-pedido">Añadir al carrito</button> </div>
+                </div>
+            </div>
+
+            <!-- Nuevos platos -->
+            <div class="plato-item">
+                <div class="plato-info">
+                    <h3 class="plato-title">Carne de Vino</h3>
+                    <p class="plato-description">Un elegante corte de carne término medio, acompañado de verduras asadas como tomates, pimientos y champiñones. El plato está decorado con hierbas frescas y presentado con estilo gourmet, ideal para una cena sofisticada, acompañado de una copa de vino tinto.</p>
+                    <div class="plato-buttons">
+                        <button class="btn-pedido">Añadir al carrito</button>
+                        
+                    </div>
+                </div>
+                <div class="plato-imagen-container">
+                    <span class="plato-precio">55 Bs</span>
+                    <div class="plato-imagen">
+                        <img src="img/Platillo/platillo1.jpg" alt="Flan Francesa">
+                        <button class="btn-pedido">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="plato-item">
+                <div class="plato-info">
+                    <h3 class="plato-title">Carne con Piña</h3>
+                    <p class="plato-description">Este plato ofrece un filete de pescado a la plancha con una corteza dorada, acompañado de camarones frescos y champiñones salteados. Se completa con un toque de salsa de mantequilla y rodajas de chile, aportando un balance entre sabores suaves y picantes, con una fresca ensalada verde.</p>
+                    <div class="plato-buttons">
+                        <button class="btn-pedido">Añadir al carrito</button>
+                    
+                    </div>
+                </div>
+                <div class="plato-imagen-container">
+                    <span class="plato-precio">40 Bs</span>
+                    <div class="plato-imagen">
+                        <img src="img/Platillo/platillo2.jpg" alt="Flan Francesa">
+                        <button class="btn-pedido">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="plato-item">
+                <div class="plato-info">
+                    <h3 class="plato-title">Filete con Queso</h3>
+                    <p class="plato-description">Un jugoso filete de carne asada con un dorado perfecto, cubierto de cebollas caramelizadas que realzan su sabor. Acompañado de mantequilla de hierbas, que se derrite delicadamente sobre la carne, y bañado con un ligero jugo de cocción. Decorado con perejil finamente picado.</p>
+                    <div class="plato-buttons">
+                        <button class="btn-pedido">Añadir al carrito</button>
+                    </div>
+                </div>
+                <div class="plato-imagen-container">
+                    <span class="plato-precio">45 Bs</span>
+                    <div class="plato-imagen">
+                        <img src="img/Platillo/platillo3.jpg" alt="Flan Francesa">
+                        <button class="btn-pedido">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="plato-item">
+                <div class="plato-info">
+                    <h3 class="plato-title">Lomo de Cerdo</h3>
+                    <p class="plato-description">Un jugoso lomo de cerdo glaseado con un acabado brillante y dorado, cortado para mostrar su interior rosado y tierno. Está guarnecido con hierbas frescas y acompañado de vegetales al vapor como brócoli y zanahorias, además de pequeñas patatas doradas.</p>
+                    <div class="plato-buttons">
+                        <button class="btn-pedido">Añadir al carrito</button>
+                    </div>
+                </div>
+                <div class="plato-imagen-container">
+                    <span class="plato-precio">70 Bs</span>
+                    <div class="plato-imagen">
+                        <img src="img/Platillo/platillo5.jpg" alt="Flan Francesa">
+                        <button class="btn-pedido">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="plato-item">
+                <div class="plato-info">
+                    <h3 class="plato-title">Mejillones al Vapor</h3>
+                    <p class="plato-description">Medallones de carne roja, probablemente cordero o ternera, cocinados al punto y bañados en una salsa roja brillante. El plato está decorado con micro hierbas y acompañado de tomates cherry frescos. La presentación es refinada y minimalista, típica de restaurante gourmet.</p>
+                    <div class="plato-buttons">
+                        <button class="btn-pedido">Añadir al carrito</button>
+                    </div>
+                </div>
+                <div class="plato-imagen-container">
+                    <span class="plato-precio">80 Bs</span>
+                    <div class="plato-imagen">
+                        <img src="img/Platillo/platillo7.jpg" alt="Flan Francesa">
+                    </div>
+                </div>
+            </div>
+
+            <div class="plato-item">
+                <div class="plato-info">
+                    <h3 class="plato-title">Hamburguesa Vegetariana</h3>
+                    <p class="plato-description">Un filete de carne a la parrilla con atractivas marcas de cocción, servido con espárragos verdes asados y tomates cherry frescos sobre una cama de lechuga. El plato está presentado sobre una superficie de madera rústica con una servilleta verde lima.</p>
+                    <div class="plato-buttons">
+                        <button class="btn-pedido">Añadir al carrito</button>
+
+                    </div>
+                </div>
+                <div class="plato-imagen-container">
+                    <span class="plato-precio">55 Bs</span>
+                    <div class="plato-imagen">
+                        <img src="img/Platillo/platillo8.jpg" alt="Flan Francesa">
+                    </div>
+                </div>
+            </div>
+
+            <div class="plato-item">
+                <div class="plato-info">
+                    <h3 class="plato-title">Tallarín Boliviana</h3>
+                    <p class="plato-description">Un plato de pasta fusilli servida con una abundante salsa de tomate casera, enriquecida con hierbas y especias. La presentación incluye albahaca fresca como guarnición y tomates cherry cortados. Se observa un tazón de aceitunas negras en el fondo.</p>
+                    <div class="plato-buttons">
+                        <button class="btn-pedido">Añadir al carrito</button>
+
+                    </div>
+                </div>
+                <div class="plato-imagen-container">
+                    <span class="plato-precio">60 Bs</span>
+                    <div class="plato-imagen">
+                        <img src="img/Platillo/platillo9.jpg" alt="Flan Francesa">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--                           Menu                                         -->
+
+
+
+<!--                        solo pie de pagina                           -->  
+                        
+            <footer class="footer">
+                <div class="footer-links">
+                    <a href="#">Términos y Condiciones</a>
+                    <a href="#">Política de Privacidad</a>
+                </div>
+                <div class="footer-copyright">
+                    © 2024 Creado por <a href="#">NoseXD</a> con <a href="#">Utepsa</a>
+                </div>
+            </footer>
+<!--                        solo pie de pagina                           -->
+        <script src="js/menu.js"></script>
+</body>
+</html>
