@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaginaWEb</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet"  href="css/estilo.css">
+</head>
+<body>
+       
+       <!-- Barra de navegación -->
+ <nav class="navegacion">
+    <div class="contenedor-navegacion">
+        <a href="#" class="logo">Sabores Eternos</a>
+        
+        <!-- Nuevo: Botón del menú móvil -->
+        <div class="menu-hamburguesa" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+        </div>
+
+        <ul class="menu-navegacion">
+            <li><a href="index.html" class="enlace-navegacion">Inicio</a></li>
+            <li><a href="menu.html" class="enlace-navegacion">Menú</a></li>
+            <li><a href="quienesomos.html" class="enlace-navegacion">Quiénes Somos</a></li>
+            <li><a href="sucursal.html" class="enlace-navegacion">Sucursales</a></li>
+            <li><a href="contacto.html" class="enlace-navegacion">Contáctanos</a></li>
+        </ul>
+
+        <div class="iconos-navegacion">
+            <a href="carrito.html" class="icono-navegacion"><i class="fas fa-shopping-cart"></i></a>
+            <a href="login.html" class="icono-navegacion"><i class="fas fa-user"></i></a>
+            <a href="registro.html" class="icono-navegacion"><i class="fas fa-sign-in-alt"></i></a>
+        </div>
+    </div>
+</nav>
+
+
+    <!--              Cuerpo de Bienvenida              -->
+    <div class="welcome-container" id="welcomeSection">
+        <div class="welcome-text">Bienvenido</div>
+        <div class="title-container">
+            <h1 class="main-title">Olivas</h1>
+        </div>
+        <div class="squares-container">
+            <!-- Cuadrados originales -->
+            <div class="decorative-square square-1"></div>
+            <div class="decorative-square square-2"></div>
+            <div class="decorative-square square-3"></div>
+            <div class="decorative-square square-4"></div>
+            <div class="decorative-square square-5"></div>
+            <div class="decorative-square square-6"></div>
+            <!-- Nuevos cuadrados -->
+            <div class="decorative-square square-7"></div>
+            <div class="decorative-square square-8"></div>
+            <div class="decorative-square square-9"></div>
+            <div class="decorative-square square-10"></div>
+        </div>
+    </div>
+
+     <!--              Cuerpo de Bienvenida              -->
+     
+
+         <!--                  carrusel                  -->
+
+            <main> 
+                <div class="background-decoration"></div>
+                <section class="carousel-section">
+                    <div class="carousel-container">
+                        <!-- Info Card -->
+                        <div class="info-card">
+                            <div class="decorative-border"></div>
+                            <div class="content-wrapper">
+                                <div class="title-container">
+                                    <h2 id="dynamic-title" class="highlighted-title"></h2>
+                                    <h3 class="subtitle">COCINA HALAL</h3>
+                                    <div class="restaurant-info">
+                                        <p>Av. Fray A. Alcalde 10,</p>
+                                        <p>44100, Guad., Jal., Mx</p>
+                                        <p>Tel: +52-1-33-12345678</p>
+                                    </div>
+                            
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- Carousel -->
+                        <div class="carousel-content">
+                            <button class="carousel-button prev" aria-label="Previous">&lt;</button>
+                            <div class="carousel-track"></div>
+                            <button class="carousel-button next" aria-label="Next">&gt;</button>
+                            <div class="carousel-indicators"></div>
+                        </div>
+                    </div>
+                </section>
+            
+
+         <!--                  carrusel                  -->
+
+
+
+        <!--                       los mejores platillos                      -->
+                            
+        <div class="mejores-platillos">
+            <div class="titulo-container">
+                <h2>Los mejores platillos</h2>
+                <div class="decoracion-mandala"></div>
+            </div>
+            
+            <div class="platillos-grid">
+                <div class="platillo-card">
+                    <img src="img/Platillo/platillo7.jpg" alt="Carne a la brasa">
+                    <div class="platillo-hover">
+                        <span class="platillo-nombre">Orejas de chancho</span>
+                        <div class="platillo-iconos">
+                            <button class="icon-heart">❤</button>
+                            <button class="icon-share">↗</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="platillo-card">
+                    <img src="img/Platillo/platillo9.jpg" alt="Pollo al espiedo">
+                    <div class="platillo-hover">
+                        <span class="platillo-nombre">Espageti Boliviana</span>
+                        <div class="platillo-iconos">
+                            <button class="icon-heart">❤</button>
+                            <button class="icon-share">↗</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="platillo-card">
+                    <img src="img/Platillo/platillo6.jpg" alt="Carne con piña">
+                    <div class="platillo-hover">
+                        <span class="platillo-nombre">Hamburgesa Vegetariana</span>
+                        <div class="platillo-iconos">
+                            <button class="icon-heart">❤</button>
+                            <button class="icon-share">↗</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--                       los mejores platillos                      -->
+        </main>
+    <script src="js/animaciones.js"></script>
+
+
+
+
+    <!--                            pie de pagina                               -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#" class="footer-link">Términos y Condiciones</a>
+                <span class="separator">|</span>
+                <a href="#" class="footer-link">Política de Privacidad</a>
+            </div>
+            <div class="footer-copyright">
+                © 2024 Creado por NoseXD <a href="https://v3.utepsa.edu/" class="wix-link">UTEPSA</a>
+            </div>
+        </div>
+    </footer>
+
+        <!--                            pie de pagina                               -->
+
+</body>
+</html>
