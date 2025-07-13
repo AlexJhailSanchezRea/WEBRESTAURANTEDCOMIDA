@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/registro.css">
+</head>
+<body>
+           <!-- Barra de navegación -->
+ <nav class="navegacion">
+    <div class="contenedor-navegacion">
+        <a href="#" class="logo">Sabores Eternos</a>
+        
+        <!-- Nuevo: Botón del menú móvil -->
+        <div class="menu-hamburguesa" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+        </div>
+
+        <ul class="menu-navegacion">
+            <li><a href="index.html" class="enlace-navegacion">Inicio</a></li>
+            <li><a href="menu.html" class="enlace-navegacion">Menú</a></li>
+            <li><a href="quienesomos.html" class="enlace-navegacion">Quiénes Somos</a></li>
+            <li><a href="sucursal.html" class="enlace-navegacion">Sucursales</a></li>
+            <li><a href="contacto.html" class="enlace-navegacion">Contáctanos</a></li>
+        </ul>
+
+        <div class="iconos-navegacion">
+            <a href="carrito.html" class="icono-navegacion"><i class="fas fa-shopping-cart"></i></a>
+            <a href="login.html" class="icono-navegacion"><i class="fas fa-user"></i></a>
+            <a href="registro.html" class="icono-navegacion"><i class="fas fa-sign-in-alt"></i></a>
+        </div>
+    </div>
+</nav>
+            <!--Solo cabezal-->
+
+    <div class="contenedor">
+        <form id="formulario-registro" class="formulario-contenedor" action="registro.php" method="post">
+            <h2>REGÍSTRATE</h2>
+            <input type="text" name="nombre_completo" placeholder="Nombre completo" required>
+            <input type="email" name="correo_electronico" placeholder="Correo Electrónico" required>
+            <div class="contenedor-contraseña">
+                <input type="password" name="contrasena" id="contraseña" placeholder="Contraseña" required>
+                <span class="mostrar-contraseña" onclick="togglePassword('contraseña')">👁️</span>
+            </div>
+            <p id="mensaje-error" class="oculto">Las contraseñas no coinciden.</p>
+            <button type="submit" name="registro">REGISTRARSE</button>
+            <a href="login.html" class="toggle-formulario">¿Ya tienes cuenta? Inicia Sesión</a>
+        </form>
+    </div>
+    <script src="js/registro.js"></script>
+</body>
+</html>
