@@ -1,0 +1,505 @@
+
+/* menu*/
+:root {
+    --primary-color: #8B4513;
+    --secondary-color: #D2691E;
+    --accent-color: #FFD700;
+    --background-color: #FFF5E6;
+    --text-color: #2C3E50;
+    --gradient-start: #8B4513;
+    --gradient-end: #D2691E;
+    --nav-hover-color: rgba(255, 215, 0, 0.2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navegacion {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+}
+
+.contenedor-navegacion {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.logo:hover {
+    transform: scale(1.05) rotate(2deg);
+    color: white;
+}
+
+.menu-navegacion {
+    display: flex;
+    list-style-type: none;
+    gap: 1.5rem;
+}
+
+.enlace-navegacion {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    position: relative;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+    border-radius: 15px;
+    background-color: transparent;
+}
+
+.enlace-navegacion:hover {
+    background-color: rgba(255,255,255,0.2);
+    color: var(--accent-color);
+    transform: translateY(-3px);
+}
+
+.enlace-navegacion::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background-color: var(--accent-color);
+    transition: all 0.3s ease;
+}
+
+.enlace-navegacion:hover::after {
+    left: 0;
+    width: 100%;
+}
+
+.iconos-navegacion {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.icono-navegacion {
+    color: var(--accent-color);
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+    position: relative;
+    
+}
+
+.icono-navegacion:hover {
+    color: white;
+    transform: scale(1.3) rotate(360deg);
+}
+
+.icono-navegacion::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+.icono-navegacion:hover::after {
+    left: 0;
+    width: 100%;
+}
+
+@media (max-width: 1200px) {
+    .menu-navegacion {
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .contenedor-navegacion {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .menu-navegacion {
+        margin-top: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .enlace-navegacion {
+        margin-bottom: 0.5rem;
+    }
+}
+/*hasta aquimenu*/
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    background-image: url("/PROYECTO-FINAL1/PROYECTO-FINAL/public/img/FondoRestaurante/fondoquienesomos.jpg"); /* Coloca la URL de tu imagen */
+    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+    background-attachment: fixed; /* La imagen se quedará fija al hacer scroll */
+    background-position: center center; /* Centra la imagen */
+    height: 100%;
+}
+
+.encabezado-gourmet {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: 
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    perspective: 1000px;
+}
+
+.contenido-encabezado {
+    max-width: 900px;
+    padding: 0 20px;
+    transform-style: preserve-3d;
+    transform: translateZ(50px);
+}
+
+.contenido-encabezado h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 6rem;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+    letter-spacing: 2px;
+}
+
+.contenido-encabezado p {
+    font-size: 1.3rem;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    line-height: 1.8;
+}
+
+.destacados-culinarios {
+    display: flex;
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.destacado {
+    flex: 1;
+    background-color: white;
+    padding: 2.5rem;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    transition: all 0.6s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.destacado::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent, var(--secondary-color), transparent);
+    transform: rotate(-45deg);
+    transition: all 0.8s ease;
+    opacity: 0.1;
+}
+
+.destacado:hover::before {
+    top: 0;
+    left: 0;
+}
+
+.destacado i {
+    font-size: 4.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    transition: all 0.5s ease;
+}
+
+.destacado:hover {
+    transform: translateY(-20px) scale(1.05);
+    box-shadow: 0 30px 50px rgba(0,0,0,0.2);
+}
+
+.destacado:hover i {
+    color: var(--secondary-color);
+    transform: rotate(360deg);
+}
+
+.cita-culinaria {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+    position: relative;
+    overflow: hidden;
+    height:200px;
+    margin:2px;
+}
+
+.cita-culinaria blockquote {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3rem;
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.cita-culinaria::before, 
+.cita-culinaria::after {
+    content: '"';
+    position: absolute;
+    font-size: 20rem;
+    color: rgba(255,255,255,0.1);
+    z-index: 1;
+}
+
+.cita-culinaria::before {
+    top: -100px;
+    left: -50px;
+}
+
+.cita-culinaria::after {
+    bottom: -100px;
+    right: -50px;
+}
+
+@media (max-width: 768px) {
+    .destacados-culinarios {
+        flex-direction: column;
+    }
+
+    .contenido-encabezado h1 {
+        font-size: 3rem;
+    }
+}
+/*contenido mision y vision*/
+        .seccion-objetivo {
+            display: flex;
+            max-width: 1200px;
+            margin: 4rem auto;
+            gap: 2rem;
+        }
+
+        .contenido-objetivo {
+            display: flex;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: all 0.6s ease;
+            position: relative;
+            
+        }
+
+        .contenido-objetivo:hover {
+            transform: translateY(-20px) scale(1.02);
+            box-shadow: 0 30px 50px rgba(0,0,0,0.2);
+    
+        }
+
+        .texto-objetivo {
+            flex: 1.5;
+            padding: 3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .imagen-objetivo {
+            flex: 1;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .imagen-objetivo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .contenido-objetivo:hover .imagen-objetivo img {
+            transform: scale(1.1);
+            
+        }
+
+        .texto-objetivo h2 {
+            font-family: 'Cormorant Garamond', serif;
+            color: var(--primary-color);
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .texto-objetivo p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 1024px) {
+            .contenido-objetivo {
+                flex-direction: column;
+                
+            }
+        }/* Adaptación para dispositivos móviles */
+@media (max-width: 768px) {
+    /* Contenedor de navegación */
+    .navegacion {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-navegacion {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .iconos-navegacion {
+        margin-top: 10px;
+    }
+
+    /* Texto de bienvenida */
+    .welcome-text {
+        font-size: 1.2rem;
+    }
+
+    .main-title {
+        font-size: 2rem;
+    }
+
+    /* Grid de platillos */
+    .platillos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Sección de reservas */
+    .reservas-container {
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px;
+    }
+
+    /* Íconos de mesas */
+    .mesa-icon {
+        width: 50px;
+        height: auto;
+    }
+
+    /* Hover de tarjetas de platillos */
+    .platillo-hover {
+        padding: 5px;
+        font-size: 0.9rem;
+    }
+
+    /* Footer */
+    .footer {
+        text-align: center;
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Nuevo: Media Queries para Responsividad */
+@media (max-width: 1200px) {
+    .menu-navegacion {
+        gap: 1rem;
+    }
+    
+    .logo {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-hamburguesa {
+        display: block;
+        position: absolute;
+        right: 1rem;
+        top: 1.2rem;
+    }
+
+    .contenedor-navegacion {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .menu-navegacion {
+        display: none;
+        width: 100%;
+        text-align: center;
+        padding-top: 1rem;
+    }
+
+    .menu-navegacion.active {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .iconos-navegacion {
+        display: none;
+        width: 100%;
+        justify-content: center;
+        padding-top: 1rem;
+    }
+
+    .iconos-navegacion.active {
+        display: flex;
+    }
+
+    .contenedor {
+        width: 90%;
+        margin: 100px auto 20px auto;
+    }
+
+    .enlace-navegacion {
+        width: 100%;
+        text-align: center;
+        padding: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.8rem;
+    }
+
+    .contenedor {
+        width: 95%;
+        margin-top: 80px;
+        padding: 15px;
+    }
+
+    .formulario-contenedor input,
+    button {
+        padding: 12px;
+        font-size: 16px;
+    }
+}
