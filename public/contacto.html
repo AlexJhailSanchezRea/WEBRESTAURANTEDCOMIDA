@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Restaurante Gourmet</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/contacto.css">
+</head>
+<body class="theme-default">
+              <!--solo cabezal -->    
+              <nav class="navegacion">
+                <div class="contenedor-navegacion">
+                    <a href="#" class="logo">Sabores Eternos</a>
+                       <!-- Nuevo: Botón del menú móvil -->
+        <div class="menu-hamburguesa" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+        </div>
+
+                    <ul class="menu-navegacion">
+                        <li><a href="index.html" class="enlace-navegacion">Inicio</a></li>
+                        <li><a href="menu.html" class="enlace-navegacion">Menú</a></li>
+                        <li><a href="quienesomos.html" class="enlace-navegacion">Quiénes Somos</a></li>
+                        <li><a href="sucursal.html" class="enlace-navegacion">Sucursales</a></li>
+                        <li><a href="contacto.html" class="enlace-navegacion">Contáctanos</a></li>
+                    </ul>
+        
+                    <div class="iconos-navegacion">
+                        <a href="carrito.html" class="icono-navegacion"><i class="fas fa-shopping-cart"></i></a>
+                        <a href="login.html" class="icono-navegacion"><i class="fas fa-user"></i></a>
+                        <a href="registro.html" class="icono-navegacion"><i class="fas fa-sign-in-alt"></i></a>
+                    </div>
+                </div>
+            </nav>
+            
+            <!--Solo cabezal-->
+
+    <header class="encabezado-gourmet">
+        <div class="contenido-encabezado">
+            <h1>CONTACTANOS</h1>
+        </div>
+    </header>
+    <div class="textura-fondo"></div>
+    
+    <div class="contenedor">
+        <div class="informacion-contacto">
+            <h2>Contacto</h2>
+            <div class="informacion-contacto-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Av. Gourmet 456, Ciudad Gastronómica</span>
+            </div>
+            <div class="informacion-contacto-item">
+                <i class="fas fa-telefono"></i>
+                <span>+56 (222) 333-4455</span>
+            </div>
+            <div class="informacion-contacto-item">
+                <i class="fas fa-envelope"></i>
+                <span>reservas@restaurantegourmet.com</span>
+            </div>
+            <div class="informacion-contacto-item">
+                <i class="fas fa-clock"></i>
+                <span>Lunes a Sábado: 12:00 - 23:00</span>
+            </div>
+        </div>
+        
+        <div class="formulario-contacto">
+            <h2>Contáctanos</h2>
+            <form id="formularioContacto" action="procesar_contacto.php" method="POST">
+                <div class="grupo-formulario">
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="grupo-formulario">
+                    <label for="correo">Correo Electrónico</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
+                <div class="grupo-formulario">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+                <div class="grupo-formulario">
+                    <label for="tipoConsulta">Tipo de Consulta</label>
+                    <select id="tipoConsulta" name="tipoConsulta" required>
+                        <option value="">Seleccione un tipo de consulta</option>
+                        <option value="reserva">Reserva</option>
+                        <option value="informacion">Información General</option>
+                        <option value="menu">Consulta de Menú</option>
+                        <option value="eventos">Eventos Especiales</option>
+                        <option value="otros">Otros</option>
+                    </select>
+                </div>
+                <div class="grupo-formulario">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escriba su consulta aquí..." required></textarea>
+                </div>
+                <button type="submit" name="contacto" class="boton">Enviar Consulta</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal de Confirmación -->
+    <div class="modal-confirmacion" id="modalConfirmacion">
+        <div class="contenido-modal">
+            <button class="cerrar-modal" id="cerrarModal">&times;</button>
+            <i class="fas fa-check-circle icono-confirmacion"></i>
+            <h3>Consulta Enviada Exitosamente</h3>
+            <p>Gracias por contactarnos. Nos pondremos en contacto con usted pronto.</p>
+            <button class="boton" id="botonCerrarModal">Cerrar</button>
+        </div>
+    </div>
+
+    <script src="js/contacto.js"></script>
+</body>
+</html>
