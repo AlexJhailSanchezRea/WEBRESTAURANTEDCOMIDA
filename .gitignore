@@ -1,0 +1,14 @@
+# Archivos del entorno de desarrollo
+.vscode/
+*.log
+*.env
+.DS_Store
+Thumbs.db
+
+# Archivos temporales
+*.bak
+*.tmp
+
+# Archivos del sistema
+.idea/
+node_modules/
