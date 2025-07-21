@@ -149,7 +149,7 @@
     --color-accent: #D2691E;
     --color-text: #333;
     --shadow-elegant: 0 10px 30px rgba(0,0,0,0.1);
-    background-image: url("/PROYECTO-FINAL1/PROYECTO-FINAL/public/img/FondoRestaurante/FondoRestaurante.jpg");
+    background-image: url("../img/FondoRestaurante/FondoRestaurante.jpg");
 }
 
 * {

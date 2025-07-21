@@ -157,7 +157,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url("/PROYECTO-FINAL1/PROYECTO-FINAL/public/img/FondoRestaurante/fondo.jpg");
+background-image: url("../img/FondoRestaurante/fondo.jpg");
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     height: 100vh; /* Ajusta la altura al 100% del viewport */
     margin: 0; /* Elimina márgenes para que ocupe toda la pantalla */

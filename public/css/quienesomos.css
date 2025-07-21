@@ -153,7 +153,7 @@ body {
     background-color: var(--background-color);
     color: var(--text-color);
     margin: 0;
-    background-image: url("/PROYECTO-FINAL1/PROYECTO-FINAL/public/img/FondoRestaurante/fondoquienesomos.jpg"); /* Coloca la URL de tu imagen */
+    background-image: url("../img/FondoRestaurante/fondoquienesomos.jpg"); /* Coloca la URL de tu imagen */
     background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
     background-attachment: fixed; /* La imagen se quedará fija al hacer scroll */
     background-position: center center; /* Centra la imagen */

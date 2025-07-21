@@ -178,7 +178,7 @@ body {
     height: 100%;
     background-image: 
         linear-gradient(rgba(255,245,230,0.8), rgba(255,245,230,0.8)),
-        url("/PROYECTO-FINAL/public/img/FondoRestaurante/fondo.jpg");
+        url("../img/FondoRestaurante/fondo.jpg");
     z-index: -1;
 }
 /*/FondoRestaurante/fondo.jpg*/
@@ -225,7 +225,7 @@ body {
 
     width: 100%;
     height: 100%;
-    background-image: url("/PROYECTO-FINAL/public/img/ImgPagina/cuadrocontacto.avif");
+    background-image: url("../img/ImgPagina/cuadrocontacto.avif");
  
 
 }
